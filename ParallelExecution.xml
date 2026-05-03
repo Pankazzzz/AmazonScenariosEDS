@@ -1,0 +1,22 @@
+<suite name="Suite" parallel="tests" thread-count="2">
+
+
+
+  <test name="EdsScenarios">
+  
+  
+  <listeners>
+  <listener class-name="BaseUtilities.Listeners"></listener>
+  </listeners>
+  
+    <classes>
+      <class name="SmokeTest.LoginModuleTest"/>
+    </classes>
+  </test>
+
+  <test name="ProductTest">
+    <classes>
+      <class name="SmokeTest.LowestHighestProductDetailTest"/>
+    </classes>
+  </test>
+</suite>
