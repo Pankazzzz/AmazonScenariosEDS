@@ -42,7 +42,7 @@ public class StandAloneTest {
 		emailLogin.sendKeys("shuklapankaj799@gmail.com");
 		driver.findElement(By.className("a-button-input")).click();
 		waitDriver.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@type='password']")));
-		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("9022575112@");
+		driver.findElement(By.xpath("//input[@type='password']")).sendKeys("password");
 		driver.findElement(By.cssSelector("[type='submit']")).click();	
 		Assert.assertEquals(logoNameString, "Amazon.in");
 		
